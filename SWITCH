@@ -1,0 +1,5 @@
+FROM centos
+MAINTAINER zenmiao
+RUN yum install httpd -y
+RUN echo 'switch' > /var/www/html/index.html
+EXPOSE 80
